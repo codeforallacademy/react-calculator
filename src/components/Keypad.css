@@ -1,0 +1,11 @@
+.Keypad {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    flex-direction: row;
+    /* height: 80%; */
+    border-radius: 10px;
+    background-color: #343434;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
