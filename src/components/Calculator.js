@@ -1,8 +1,7 @@
 import React, { Component, useState } from 'react';
 import Button from './Button';
-import './Calculator.css';
 import Display from './Display';
-import Keypad from './Keypad';
+import './Calculator.css';
 
 const Calculator = () => {
 
@@ -33,7 +32,7 @@ const Calculator = () => {
     return (
         <div className="Calculator">
             <Display data={data} />
-            <Keypad>
+            <div className="Keypad">
                 <Button onClick={handleClick} label="Clear" size="2" value="clear" color="#00FFFF" />
                 <Button onClick={handleClick} label="%" value="%" color="#00FFFF" />
                 <Button onClick={handleClick} label="/" value="/" color="#ff0038" />
@@ -57,7 +56,7 @@ const Calculator = () => {
                 <Button onClick={handleClick} label="0" value="0" />
                 <Button onClick={handleClick} label="." value="." />
                 <Button onClick={handleClick} label="=" value="equal" color="#ff0038" />
-            </Keypad>
+            </div>
         </div>
     );
 }
